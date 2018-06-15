@@ -6,6 +6,10 @@
 	layout:decorate="'layout/LayoutPadrao'"
 	xmlns:brewer="http://brewer.com">
 <head>
+<title>Cadastro de cerveja</title>
+
+<link rel="stylesheet" th:ref="@{/stylescheets/vendors/uikit.min.css}"  >
+
 </head>
 
 <body>
@@ -117,7 +121,7 @@
 							<div class="bw-upload">
 								<i class="glyphicon glyphicon-claud-upload"></i>
 								<span>Arraste a foto aqui ou</span>
-								<a class="bw-upload-form-file">Selecione <input type="file" accer=".jpg,.jpeg,.png"></a>
+								<a class="bw-upload-form-file">Selecione <input type="file" accept=".jpg,.jpeg,.png"/></a>
 							</div>
 						</div>
 					</div>
@@ -133,6 +137,7 @@
 </section>
 <th:block layout:fragment="javascript-extra">
 	<script th:src="@{/javascripts/estilo.cadastro-rapido.js}">   </script>
+	<script th:src="@{/javascripts/vendors/uikit.min.js}">   </script>
 </th:block>
 </body>
 </html>
